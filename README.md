@@ -1,7 +1,6 @@
 # Telegram Weather Pet Bot
 
-Учебный проект на Python
-Бот показывает погоду в выбранном городе и присылает картинку попугая по погоде
+Python-бот показывает погоду в выбранном городе и присылает картинку попугая по погоде
 
 ## Что умеет бот
 
@@ -31,7 +30,7 @@
 pip install -r requirements.txt
 ```
 
-2. Создайте `.env` по примеру `.env.example` и заполните ключи:
+2. Создайте `.env` и заполните ключи:
 
 - `TELEGRAM_BOT_TOKEN` — токен бота из BotFather
 - `WEATHER_API_KEY` — ключ OpenWeatherMap
@@ -60,14 +59,8 @@ WEATHER_API_KEY=your-openweather-api-key
 python bot.py
 ```
 
-Если в системе несколько версий Python, используйте Python 3.10+:
 
-```bash
-python3.10 -m pip install -r requirements.txt
-python3.10 bot.py
-```
-
-## Идея структуры
+## Структура
 
 - `bot.py` — вся основная логика (команды, кнопки, погода, текст, картинки)
 - `config.py` — загрузка токенов из `.env`
